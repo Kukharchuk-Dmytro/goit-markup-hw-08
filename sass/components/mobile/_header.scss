@@ -1,0 +1,108 @@
+@media (max-width: 480px) {
+  .logo {
+    display: block;
+    padding: 0;
+    margin: 16px;
+    color: $logo-color;
+    font-family: $font-logo;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.19;
+    text-decoration: none;
+  }
+
+  .logo > span {
+    color: $logo-span;
+  }
+  .main-nav {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .site-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid #ececec;
+
+    .link {
+      position: relative;
+      color: $colore-heading;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      transition-duration: 250ms;
+    }
+    .link:hover,
+    .link:focus {
+      color: $colore-focus;
+    }
+    .link.active {
+      color: $colore-focus;
+    }
+
+    .link.active::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      left: 0;
+      bottom: 0;
+      background-color: $colore-focus;
+      border-radius: 2px;
+    }
+    .item {
+      display: flex;
+      justify-content: center;
+      margin: 60px 0px 60px 0px;
+    }
+  }
+  .auth-nav {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    align-items: center;
+    list-style: none;
+
+    .link {
+      align-items: center;
+      text-decoration: none;
+      color: $colore-auth-nav;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      transition-duration: 250ms;
+    }
+
+    .link:focus,
+    .link:hover {
+      color: $colore-focus;
+    }
+    .item {
+      display: flex;
+      justify-content: center;
+      margin: 60px 0px 60px 0px;
+    }
+  }
+
+  .email {
+    fill: currentcolor;
+    margin-right: 10px;
+    height: 16px;
+    transition-duration: 250ms;
+  }
+
+  .phone {
+    fill: currentcolor;
+    margin-right: 10px;
+    width: 15px;
+    transition-duration: 250ms;
+  }
+}
