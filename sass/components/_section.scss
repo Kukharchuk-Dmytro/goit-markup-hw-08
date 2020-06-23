@@ -1,0 +1,73 @@
+.section {
+  margin-bottom: 94px;
+  /* background: tomato; */
+
+  &-heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
+
+  &-text {
+    color: $colore-text;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    margin: 0px;
+  }
+}
+
+.list-class {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.icon {
+  &-anntena::before {
+    background-image: url(../image/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &-clock::before {
+    background-image: url(../image/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &-diagram::before {
+    background-image: url(../image/diagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &-actronaut::before {
+    background-image: url(../image/astronaut.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.list-class .items + .items {
+  margin-left: 30px;
+}
+
+.items::before {
+  display: block;
+  content: '';
+  height: 120px;
+  width: 270px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}

@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  padding: auto;
+
+  color: $logo-color;
+  font-family: $font-logo;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo > span {
+  color: $logo-span;
+}

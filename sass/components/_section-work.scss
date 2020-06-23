@@ -1,0 +1,46 @@
+.heading {
+  margin: 0;
+  padding-bottom: 50px;
+}
+.section-work .heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.title {
+  height: 294px;
+  position: relative;
+  text-align: center;
+  margin: 0;
+  bottom: 0;
+}
+
+.list-work {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 94px;
+
+  & .title + .title {
+    margin-left: 30px;
+  }
+}
+
+.label {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.16;
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  width: 370px;
+  padding: 27px 83px;
+  background: rgba(47, 48, 58, 0.8);
+}

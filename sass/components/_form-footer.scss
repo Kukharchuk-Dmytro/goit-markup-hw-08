@@ -1,0 +1,57 @@
+/* форма подвал */
+.form-footer {
+  margin-left: 94px;
+}
+
+.form-heading {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 21px;
+  text-transform: uppercase;
+}
+
+.footer-button {
+  display: flex;
+
+  border-radius: 4px;
+  padding: 11px 34px;
+  min-width: 200px;
+  height: 50px;
+  color: white;
+  background-color: $color-button;
+  border-color: $color-button;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  margin-left: 12px;
+
+  &::after {
+    content: '';
+    display: flex;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url(../image/send.svg);
+  }
+}
+.footers-button {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.na {
+  display: flex;
+}
