@@ -3,12 +3,16 @@
     margin: 0;
     padding-bottom: 50px;
   }
-  .section-work .heading {
+  .section-work{
+    display: none;
+  
+  .heading {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+  }
   }
 
   .title {

@@ -11,7 +11,6 @@ body {
   .container {
     margin-left: auto;
     margin-right: auto;
-    width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     /* outline: 2px solid tomato; */
@@ -196,7 +195,7 @@ body {
 
 @media (max-width: 481px) {
   .section {
-    margin-bottom: 94px;
+    margin-bottom: 60px;
     /* background: tomato; */
   }
   .section-heading {
@@ -264,6 +263,9 @@ body {
     margin: 0;
     padding-bottom: 50px;
   }
+  .section-work {
+    display: none;
+  }
   .section-work .heading {
     font-weight: 700;
     font-size: 36px;
@@ -303,12 +305,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  .listt {
-    list-style: none;
-  }
-  .listt .people {
-    margin-left: 30px;
-  }
   .our-comand {
     display: block;
     -webkit-box-align: center;
@@ -318,11 +314,13 @@ body {
     margin: 0;
   }
   .section-team {
-    margin-bottom: 94px;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f5f4fa;
   }
   .section-team .heading {
+    margin: 0;
+    padding: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -330,18 +328,13 @@ body {
     letter-spacing: 0.03em;
   }
   .section-team .people {
-    color: var(--colore-heading);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-  }
-  .section-team .people + .people {
     margin-top: 30px;
   }
   .people {
     text-align: center;
-    width: 270px;
-    height: 422px;
     background: #ffffff;
     border-radius: 4px;
     -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -374,17 +367,21 @@ body {
     background-color: #2196f3;
     border-radius: 50%;
   }
+  .listt {
+    list-style: none;
+  }
 }
 
 @media (max-width: 480px) {
   .client-text {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
+    margin-top: 60px;
   }
   .icon-client {
     fill: #afb1b8;
@@ -400,15 +397,18 @@ body {
     fill: #2196f3;
   }
   .list-client {
-    display: block;
-    margin-left: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 0;
-    margin-bottom: 94px;
+    margin: 0;
     text-decoration: none;
     list-style: none;
   }
-  .clients + .clients {
-    margin-top: 30px;
+  .clients {
+    margin: 15px;
   }
 }
 
@@ -455,7 +455,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     margin: 0;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
     text-transform: uppercase;
   }
   .navigation {
@@ -467,7 +467,9 @@ body {
     margin-bottom: 28px;
   }
   .social {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -485,6 +487,7 @@ body {
   }
   .footer {
     background-color: #2f303a;
+    margin-top: 45px;
   }
   .navigation-button {
     display: block;
@@ -500,7 +503,7 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
   .blocklink {
-    margin-left: 69px;
+    margin-left: 0px;
   }
   .social .adresi + .adresi {
     margin-left: 11px;
@@ -532,7 +535,7 @@ body {
 /* форма подвал */
 @media (max-width: 480px) {
   .form-footer {
-    margin-left: 94px;
+    margin-left: 0px;
   }
   .form-heading {
     color: #ffffff;
@@ -563,7 +566,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 12px;
   }
   .footer-button::after {
     content: '';
