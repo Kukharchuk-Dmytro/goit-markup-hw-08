@@ -1,18 +1,26 @@
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 768px) {
+  .listt {
+    list-style: none;
+
+    & .people + .people {
+      margin-left: 30px;
+    }
+  }
+
   .our-comand {
-    display: block;
+    display: flex;
     align-items: center;
     padding: 0;
     margin: 0;
   }
   .section-team {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: $backgraund-team;
+    margin-bottom: 94px;
+    background-color: #f5f4fa;
+    padding-top: 94px;
+    padding-bottom: 94px;
 
     & .heading {
-      margin: 0;
-      padding: 0;
+      color: var(--colore-heading);
       font-weight: 700;
       font-size: 36px;
       line-height: 1.16;
@@ -20,14 +28,16 @@
       letter-spacing: 0.03em;
     }
     & .people {
+      color: var(--colore-heading);
       font-weight: 500;
       font-size: 16px;
       line-height: 1.18;
-      margin-top: 30px;
     }
   }
   .people {
     text-align: center;
+    width: 270px;
+    height: 422px;
     background: #ffffff;
     border-radius: 4px;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -62,8 +72,5 @@
       background-color: $colore-focus;
       border-radius: 50%;
     }
-  }
-  .listt {
-    list-style: none;
   }
 }

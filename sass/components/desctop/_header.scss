@@ -1,11 +1,8 @@
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .logo {
-    display: block;
-    padding: 0;
-    margin: 16px;
     color: $logo-color;
     font-family: $font-logo;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
     line-height: 1.19;
     text-decoration: none;
@@ -15,28 +12,36 @@
     color: $logo-span;
   }
   .main-nav {
+    display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    width: 480px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
   }
 
   .site-nav {
+    display: flex;
     margin: 0;
-    padding: 0;
+    margin-left: 85px;
     list-style: none;
-    border-top: 1px solid #ececec;
+
+    .item + .item {
+      margin-left: 50px;
+    }
 
     .link {
       position: relative;
+      display: flex;
       color: $colore-heading;
       font-weight: 500;
       font-size: 14px;
       line-height: 1.14;
       letter-spacing: 0.02em;
       text-decoration: none;
+      padding-top: 32px;
+      padding-bottom: 32px;
       transition-duration: 250ms;
     }
     .link:hover,
@@ -57,20 +62,16 @@
       background-color: $colore-focus;
       border-radius: 2px;
     }
-    .item {
-      display: flex;
-      justify-content: center;
-      margin: 60px 0px 60px 0px;
-    }
   }
   .auth-nav {
+    display: flex;
     margin: 0;
-    padding: 0;
     margin-left: auto;
     align-items: center;
     list-style: none;
 
     .link {
+      display: flex;
       align-items: center;
       text-decoration: none;
       color: $colore-auth-nav;
@@ -78,17 +79,17 @@
       font-size: 14px;
       line-height: 1.14;
       letter-spacing: 0.02em;
+      padding-top: 32px;
+      padding-bottom: 32px;
       transition-duration: 250ms;
+    }
+    .item + .item {
+      margin-left: 30px;
     }
 
     .link:focus,
     .link:hover {
       color: $colore-focus;
-    }
-    .item {
-      display: flex;
-      justify-content: center;
-      margin: 60px 0px 60px 0px;
     }
   }
 

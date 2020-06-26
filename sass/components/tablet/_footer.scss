@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 768px) {
   .logo-footer {
     color: $logo-color;
     font-family: Raleway, cursive;
@@ -42,7 +42,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     text-transform: uppercase;
   }
 
@@ -75,10 +75,9 @@
 
   .footer {
     background-color: #2f303a;
-    margin-top: 45px;
   }
   .navigation-button {
-    display: block;
+    display: flex;
 
     list-style: none;
     margin: 0;
@@ -86,12 +85,12 @@
   }
 
   .nav {
-    display: block;
+    display: flex;
     align-items: baseline;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
   .blocklink {
-    margin-left: 0px;
+    margin-left: 69px;
   }
 
   .social .adresi + .adresi {

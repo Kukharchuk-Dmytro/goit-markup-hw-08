@@ -1,13 +1,4 @@
 @import './utils/variables';
-@import './components/mobile/body';
-@import './components/mobile/conteiner';
-@import './components/mobile/header';
-@import './components/mobile/hero';
-@import './components/mobile/section';
-@import './components/mobile/section-work';
-@import './components/mobile/section-comand';
-@import './components/mobile/section-client';
-@import './components/mobile/footer';
-@import './components/mobile/form-footer';
-@import './components/mobile/form';
-@import './components/mobile/portfolio';
+@import './components/mobile/index';
+@import './components/tablet/index';
+@import './components/desctop/index';
