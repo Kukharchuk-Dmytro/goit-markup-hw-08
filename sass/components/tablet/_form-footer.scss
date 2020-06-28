@@ -1,7 +1,9 @@
 /* форма подвал */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .form-footer {
-    margin-left: 94px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .form-heading {
@@ -13,6 +15,7 @@
     margin: 0;
     margin-bottom: 21px;
     text-transform: uppercase;
+    text-align: center;
   }
 
   .footer-button {
@@ -31,7 +34,7 @@
     text-decoration: none;
     text-align: center;
     align-items: center;
-    margin-left: 12px;
+    margin: 20px auto 60px auto;
 
     &::after {
       content: '';
@@ -43,7 +46,7 @@
     }
   }
   .footers-button {
-    width: 358px;
+    min-width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -51,9 +54,5 @@
     border-radius: 4px;
     background: #2f303a;
     color: rgba(255, 255, 255, 0.6);
-  }
-
-  .na {
-    display: flex;
   }
 }

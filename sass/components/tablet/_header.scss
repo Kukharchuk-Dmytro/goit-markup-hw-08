@@ -1,5 +1,6 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo {
+    display: flex;
     color: $logo-color;
     font-family: $font-logo;
     font-size: 26px;
@@ -9,14 +10,14 @@
   }
 
   .logo > span {
-    color: gold;
+    color: $logo-span;
   }
   .main-nav {
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+    width: 768px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -24,7 +25,8 @@
   .site-nav {
     display: flex;
     margin: 0;
-    margin-left: 85px;
+    padding: 0;
+    margin-left: 81px;
     list-style: none;
 
     .item + .item {
@@ -64,7 +66,7 @@
     }
   }
   .auth-nav {
-    display: flex;
+    display: block;
     margin: 0;
     margin-left: auto;
     align-items: center;
@@ -79,12 +81,10 @@
       font-size: 14px;
       line-height: 1.14;
       letter-spacing: 0.02em;
-      padding-top: 32px;
-      padding-bottom: 32px;
       transition-duration: 250ms;
     }
     .item + .item {
-      margin-left: 30px;
+      margin-top: 10px;
     }
 
     .link:focus,

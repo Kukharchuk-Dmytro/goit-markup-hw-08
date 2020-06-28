@@ -1,14 +1,17 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .heading {
     margin: 0;
     padding-bottom: 50px;
   }
-  .section-work .heading {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
+  .section-work {
+    display: none;
+    &.heading {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.16;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
   }
 
   .title {

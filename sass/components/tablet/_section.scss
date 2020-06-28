@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .section {
     margin-bottom: 94px;
     /* background: tomato; */
@@ -17,6 +17,8 @@
     }
 
     &-text {
+      width: 354px;
+      height: 75px;
       color: $colore-text;
       font-weight: 400;
       font-size: 14px;
@@ -29,6 +31,7 @@
 
   .list-class {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     list-style: none;
     padding: 0;
@@ -60,16 +63,15 @@
     }
   }
 
-  .list-class .items + .items {
-    margin-left: 30px;
-  }
-
   .items::before {
     display: block;
     content: '';
+    width: 354px;
     height: 120px;
-    width: 270px;
     background-color: #f5f4fa;
     border-radius: 4px;
+  }
+  .items {
+    margin: 15px;
   }
 }

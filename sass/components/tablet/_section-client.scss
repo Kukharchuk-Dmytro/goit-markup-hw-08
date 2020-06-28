@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .client-text {
     font-weight: 700;
     font-size: 36px;
@@ -11,10 +11,11 @@
 
   .icon-client {
     fill: #afb1b8;
-    width: 170px;
+    width: 226px;
     height: 90px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
+    margin: 15px;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -27,6 +28,7 @@
   }
   .list-client {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     margin-bottom: 94px;
@@ -34,8 +36,5 @@
     margin-right: auto;
     text-decoration: none;
     list-style: none;
-  }
-  .clients + .clients {
-    margin-left: 30px;
   }
 }
