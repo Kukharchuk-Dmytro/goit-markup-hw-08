@@ -22,39 +22,46 @@
   <body>
    
 
-    <header>
+    <header class="page-header">
       
         <nav class="main-nav">
           <a class="logo" href="./index.html">
             <span class="web">Web</span> Studio
           </a>
-
-          <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link active">Студия</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
-            </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
-          </ul>
-
-          <ul class="auth-nav list">
-            <li class="item">
-              <a href="" class="link">
-                <svg class="email" width="16" height="12">
-                  <use href="./image/sprite2.svg#icon-email"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="item">
-              <a href="" class="link">
-                <svg class="phone" width="10" height="15">
-                  <use href="./image/sprite2.svg#icon-phone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+           <button type="button" class="menu-button is-open" data-menu-button >
+            <svg class="mobile-menu" width="40" height="40" aria-label="мобильное меню">
+              <use class="icon-open" href="./image/sprite2.svg#icon-open"></use>
+              <use class="icon-close" href="./image/sprite2.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="site-nav list">
+              <li class="item"><a href="./index.html" class="link active">Студия</a></li>
+              <li class="item">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="item"><a href="" class="link">Контакты</a></li>
+            </ul>
+            
+            <ul class="auth-nav list">
+              <li class="item">
+                <a href="" class="link">
+                  <svg class="email" width="16" height="12">
+                    <use href="./image/sprite2.svg#icon-email"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="item">
+                <a href="" class="link">
+                  <svg class="phone" width="10" height="15">
+                    <use href="./image/sprite2.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       
     </header>
@@ -310,7 +317,7 @@
           <ul class="list-client">
             <li class="clients">
               <a href="" class="" >
-                <svg class="icon-client" width="170" height="90"  >
+                <svg class="icon-client"   >
                   <use href="./image/sprite2.svg#icon-client1"></use>
                 </svg>
                 <!-- <img src="./image/client1.svg" alt="" /> -->
@@ -319,7 +326,7 @@
 
             <li class="clients">
               <a href="" class="">
-                <svg class="icon-client" width="170" height="90">
+                <svg class="icon-client" w>
                   <use href="./image/sprite2.svg#icon-client2"></use>
                 </svg>
 
@@ -329,7 +336,7 @@
 
             <li class="clients">
               <a href="" class="">
-                <svg class="icon-client" width="170" height="90">
+                <svg class="icon-client" >
                   <use href="./image/sprite2.svg#icon-client3"></use>
                 </svg>
                 <!-- <img src="./image/client3.svg" alt="" /> -->
@@ -338,7 +345,7 @@
 
             <li class="clients">
               <a href="" class="">
-                <svg class="icon-client" width="170" height="90">
+                <svg class="icon-client" >
                   <use href="./image/sprite2.svg#icon-client4"></use>
                 </svg>
                 <!-- <img src="./image/client4.svg" alt="" /> -->
@@ -347,7 +354,7 @@
 
             <li class="clients">
               <a href="">
-                <svg class="icon-client" width="170" height="90">
+                <svg class="icon-client" >
                   <use href="./image/sprite2.svg#icon-client5"></use>
                 </svg>
                 <!-- <img src="./image/client5.svg" alt="" /> -->
@@ -356,7 +363,7 @@
 
             <li class="clients">
               <a href="">
-                <svg class="icon-client" width="170" height="90">
+                <svg class="icon-client" >
                   <use href="./image/sprite2.svg#icon-client6"></use>
                 </svg>
                 <!-- <img src="./image/client6.svg" alt="" /> -->
@@ -417,5 +424,6 @@
       
     </footer>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
   </body>
 </html>

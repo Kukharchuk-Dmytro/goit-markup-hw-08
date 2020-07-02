@@ -17,7 +17,6 @@
     }
 
     &-text {
-      width: 354px;
       height: 75px;
       color: $colore-text;
       font-weight: 400;
@@ -66,12 +65,12 @@
   .items::before {
     display: block;
     content: '';
-    width: 354px;
     height: 120px;
     background-color: #f5f4fa;
     border-radius: 4px;
   }
   .items {
     margin: 15px;
+    max-width: 354px;
   }
 }

@@ -11,6 +11,9 @@
   .logo > span {
     color: $logo-span;
   }
+  .menu-button {
+    display: none;
+  }
   .main-nav {
     display: flex;
     align-items: center;

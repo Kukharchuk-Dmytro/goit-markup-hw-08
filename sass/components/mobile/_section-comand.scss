@@ -23,7 +23,7 @@
       font-weight: 500;
       font-size: 16px;
       line-height: 1.18;
-      margin-top: 30px;
+      margin: 15px;
     }
   }
   .people {
@@ -35,7 +35,7 @@
     & > span {
       color: #757575;
       font-weight: 400;
-      width: 450px;
+
       height: 482px;
     }
   }
@@ -52,6 +52,7 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     margin-top: 16px;
+    margin-bottom: 24px;
     padding: 12px;
     border-radius: 50%;
 
@@ -67,5 +68,6 @@
   }
   .listt {
     list-style: none;
+    max-width: 450px;
   }
 }

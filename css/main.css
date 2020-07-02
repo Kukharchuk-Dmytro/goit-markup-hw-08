@@ -19,9 +19,7 @@ body {
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .logo {
-    display: block;
     padding: 0;
-    margin: 16px;
     color: #212121;
     font-family: Raleway, cursive;
     font-size: 24px;
@@ -33,6 +31,12 @@ body {
     color: #2196f3;
   }
   .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -46,7 +50,6 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    border-top: 1px solid #ececec;
   }
   .site-nav .link {
     position: relative;
@@ -118,7 +121,10 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 60px 0px 60px 0px;
+  }
+  .auth-nav .item + .item {
+    margin-top: 15px;
+    margin-bottom: 60px;
   }
   .email {
     fill: currentcolor;
@@ -134,12 +140,51 @@ body {
     -webkit-transition-duration: 250ms;
             transition-duration: 250ms;
   }
+  .menu-button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    margin: 10px 0px 10px 0px;
+    border: none;
+    background-color: transparent;
+    -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-button .icon-close {
+    display: none;
+  }
+  .menu-button.is-open .icon-close {
+    display: block;
+  }
+  .menu-button.is-open .icon-open {
+    display: none;
+  }
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
+    padding: 60px 0;
+    text-align: center;
+  }
+  .menu-container.is-open {
+    display: block;
+    padding: 0;
+  }
+  .page-header {
+    position: relative;
+  }
 }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .hero {
     width: 100%;
-    position: relative;
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -209,6 +254,7 @@ body {
     margin-bottom: 10px;
     margin-top: 30px;
     text-transform: uppercase;
+    text-align: center;
   }
   .section-text {
     color: #757575;
@@ -257,6 +303,7 @@ body {
   }
   .items {
     margin: 15px;
+    max-width: 450px;
   }
 }
 
@@ -333,7 +380,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    margin-top: 30px;
+    margin: 15px;
   }
   .people {
     text-align: center;
@@ -345,7 +392,6 @@ body {
   .people > span {
     color: #757575;
     font-weight: 400;
-    width: 450px;
     height: 482px;
   }
   .team-name {
@@ -360,6 +406,7 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
     margin-top: 16px;
+    margin-bottom: 24px;
     padding: 12px;
     border-radius: 50%;
     -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -373,6 +420,7 @@ body {
   }
   .listt {
     list-style: none;
+    max-width: 450px;
   }
 }
 
@@ -389,7 +437,7 @@ body {
   }
   .icon-client {
     fill: #afb1b8;
-    width: 170px;
+    max-width: 210px;
     height: 90px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -427,7 +475,6 @@ body {
     font-size: 22px;
     font-weight: 700;
     line-height: 1.181;
-    width: 231px;
   }
   .logo-footer > span {
     color: #2196f3;
@@ -464,9 +511,11 @@ body {
     margin: 0;
     margin-bottom: 20px;
     text-transform: uppercase;
+    text-align: center;
   }
   .navigation {
-    display: inline-block;
+    display: block;
+    text-align: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -477,6 +526,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -531,7 +583,8 @@ body {
 /* форма подвал */
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .form-footer {
-    margin-left: 0px;
+    display: block;
+    text-align: center;
   }
   .form-heading {
     color: #ffffff;
@@ -547,6 +600,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 4px;
     padding: 11px 34px;
     min-width: 200px;
@@ -574,7 +629,7 @@ body {
     background-image: url(../image/send.svg);
   }
   .footers-button {
-    max-width: 450px;
+    width: 90%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     -webkit-box-sizing: border-box;
@@ -585,9 +640,6 @@ body {
     background: #2f303a;
     color: rgba(255, 255, 255, 0.6);
   }
-  .na {
-    display: block;
-  }
 }
 
 /* форма зааказа */
@@ -595,7 +647,7 @@ body {
   .form-background {
     position: absolute;
     display: block;
-    max-width: 1600px;
+    width: 100%;
   }
   .form-field {
     position: relative;
@@ -645,7 +697,7 @@ body {
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    width: 448px;
+    max-width: 448px;
     height: 120px;
     padding: 12px 16px;
     margin-bottom: 20px;
@@ -668,7 +720,7 @@ body {
     padding-right: 55px;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 200px;
+    max-width: 200px;
     height: 50px;
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -725,7 +777,7 @@ body {
     outline: none;
   }
   .form-input {
-    width: 448px;
+    max-width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     padding: 12px;
@@ -943,6 +995,9 @@ body {
   .logo > span {
     color: #2196f3;
   }
+  .menu-button {
+    display: none;
+  }
   .main-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1126,7 +1181,6 @@ body {
     text-transform: uppercase;
   }
   .section-text {
-    width: 354px;
     height: 75px;
     color: #757575;
     font-weight: 400;
@@ -1172,13 +1226,13 @@ body {
   .items::before {
     display: block;
     content: '';
-    width: 354px;
     height: 120px;
     background-color: #f5f4fa;
     border-radius: 4px;
   }
   .items {
     margin: 15px;
+    max-width: 354px;
   }
 }
 
@@ -1882,6 +1936,9 @@ body {
   }
   .logo > span {
     color: #2196f3;
+  }
+  .menu-button {
+    display: none;
   }
   .main-nav {
     display: -webkit-box;
