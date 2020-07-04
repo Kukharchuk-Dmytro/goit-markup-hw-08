@@ -71,7 +71,8 @@
   .auth-nav {
     display: block;
     margin: 0;
-    margin-left: auto;
+    padding: 0;
+    margin-left: 45px;
     align-items: center;
     list-style: none;
 
@@ -108,5 +109,9 @@
     margin-right: 10px;
     width: 15px;
     transition-duration: 250ms;
+  }
+  .menu-container {
+    display: flex;
+    align-items: center;
   }
 }
