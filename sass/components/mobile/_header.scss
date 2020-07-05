@@ -39,6 +39,7 @@
     }
     .link.active {
       color: $colore-focus;
+      padding-bottom: 8px;
     }
 
     .link.active::after {

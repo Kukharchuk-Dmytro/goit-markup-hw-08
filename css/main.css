@@ -65,6 +65,7 @@ body {
   }
   .site-nav .link.active {
     color: #2196f3;
+    padding-bottom: 8px;
   }
   .site-nav .link.active::after {
     content: '';
@@ -186,7 +187,7 @@ body {
     margin: 0 auto;
     text-align: center;
     max-width: 480px;
-    height: 600px;
+    height: 400px;
     background: rgba(47, 48, 58, 0.8);
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../image/hero.svg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../image/hero.svg);
@@ -204,12 +205,12 @@ body {
     font-family: Roboto, cursive;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 200px;
+    padding-top: 118px;
     -ms-flex-line-pack: center;
         align-content: center;
     color: #ffff;
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -389,7 +390,6 @@ body {
   .people > span {
     color: #757575;
     font-weight: 400;
-    height: 482px;
   }
   .team-name {
     margin-top: 30px;
@@ -418,6 +418,18 @@ body {
   .listt {
     list-style: none;
     max-width: 450px;
+  }
+  .thumb {
+    height: 320px;
+  }
+  .img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
   }
 }
 
@@ -516,8 +528,8 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-top: 48px;
-    margin-bottom: 28px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .social {
     display: -webkit-box;
@@ -582,6 +594,8 @@ body {
   .form-footer {
     display: block;
     text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .form-heading {
     color: #ffffff;
@@ -626,8 +640,9 @@ body {
     background-image: url(../image/send.svg);
   }
   .footers-button {
-    width: 90%;
+    width: 100%;
     height: 50px;
+    margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -666,13 +681,14 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
   }
   .form-hero {
+    padding: 40px;
     display: inline-block;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    max-width: 450px;
+    width: 90%;
     height: 609px;
     background: #ffffff;
     -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -688,7 +704,7 @@ body {
     letter-spacing: 0.03em;
     color: black;
     margin: 0;
-    margin: 40px 40px 30px 40px;
+    margin: 0px 0px 30px 0px;
   }
   .form-comment {
     resize: none;
@@ -753,7 +769,7 @@ body {
   .icon {
     position: absolute;
     top: 10px;
-    left: 60px;
+    left: 16px;
     margin-right: 8px;
     -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -761,7 +777,7 @@ body {
   .form-label {
     position: absolute;
     top: 13px;
-    left: 82px;
+    left: 42px;
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.01em;
@@ -774,14 +790,14 @@ body {
     outline: none;
   }
   .form-input {
-    max-width: 448px;
+    width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     padding: 12px;
     border-radius: 4px;
     font-size: 16px;
     outline: none;
-    margin: 0px 40px 30px 40px;
+    margin: 0px 0px 30px 0px;
     padding-left: 42px;
     -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1366,6 +1382,18 @@ body {
     --color3: white;
     background-color: #2196f3;
     border-radius: 50%;
+  }
+  .thumb {
+    height: 260px;
+  }
+  .img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
   }
 }
 
