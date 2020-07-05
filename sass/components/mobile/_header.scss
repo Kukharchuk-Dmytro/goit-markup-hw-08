@@ -66,6 +66,7 @@
     list-style: none;
 
     .link {
+      display: flex;
       align-items: center;
       text-decoration: none;
       color: $colore-auth-nav;
